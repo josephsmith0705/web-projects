@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet"> <!---Imports a font from Google Fonts' API--->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---Sets the viewpoint so that the device width affects the zoom--->
+<title>Joseph Smith CPD Progress</title> <!---Gives the tab a label--->
+<link rel="shortcut icon" type="image/png" href="content/ntu_logo.png"/> <!---Sets the favicon to the NTU logo--->
+<link rel="stylesheet" type="text/css" href="content/style.css"> <!---Links to the external style sheet, style.css--->
+</head>
+<style>
+@media only screen and (max-width: 600px) {
+	.column-right { 
+		min-width: 100%;
+	}
+}
+@media only screen and (min-width:600px) and (max-width: 850px) {
+	.column-right {
+		min-width:40%;
+	}
+	.column-left {
+		width:50%;
+	}
+}
+@media only screen and (min-width:850px) and (max-width: 1250px) {
+	.column-right {
+		min-width:25%;
+	}
+	.column-left {
+		width:67%;
+	}
+}
+.main {
+	padding-top: 60px;
+	min-height:700px;
+}
+.main:after { 
+	content: ""; /*Inserts some blank space after the content in main, so that the footer touches the bottom of the page*/
+	display: table; /*Makes this blank content behave like a table*/
+	clear: both; /*Leaves any empty space clear*/
+}
+.column-left {
+	float:left;
+	padding:30px 30px 0px 30px;
+	max-width:75%; 
+}
+.column-right { 
+	width: 20%; 
+	float:right;
+	word-wrap: break-word; /*Stops the words continuing out of the screen, and makes them wrap instead*/
+}
+.about, .cpd-info {
+	background-color:#FF8BAB;
+	border-radius:20px;
+	padding:5px 15px;
+	margin:10px;
+	box-shadow: 2px 2px 10px -10px;
+}
+</style>
+<body>
+<header> 
+	<a href="home.html">Home</a> 
+	<div class="cpd-dropdown"> <!---Creates a div for the dropdown menu as a whole--->
+	<a href="cpd.html">CPD</a>
+		<div class="cpd-content"> <!---Creates a div for just the links in the dropdown menu--->
+			<a href="cpd.html#part-time-work">Part-time work</a> <!---Each link in dropdown references a particular section of the page CPD, identified by their unique IDs--->
+			<a href="cpd.html#paid-gigs">Paid gigs</a>
+			<a href="cpd.html#charity-gigs">Charity gigs</a>
+			<a href="cpd.html#tutor-sessions">Tutor sessions</a>
+		</div>
+	</div>
+</header>
+<div class="main"> <!---Creates a div for the whole of the main screen content--->
+	<span class="column-left"> <!---Creates a span for only the content on the left of the screen--->
+	<h1 style="padding-bottom:25px; font-size:180%;">Latest CPD Activities</h1>
+		<div class="entry"> <!---Each CPD activity is sorted into a div--->
+			<h1>Paid Gig and Merch Sales at The Chameleon, Nottingham - 10/11/19</h1>
+			<p>On the 10th, my band Blight Town played a paid gig supporting Molars and Gentleman's Brawl, after which I managed the merch stand</p>
+		</div>
+		<div class="entry">
+			<h1>Paid Gig and Merch Sales at The Chameleon, Nottingham - 6/11/19</h1>
+			<p>On the 6th, my band Blight Town played a paid gig supporting Creature on their Hound UK tour. After our gig, I also manned the merch stand</p>
+		</div>
+		<div class="entry">
+			<h1>Paid Gig and Merch Sales at The Hairy Dog, Derby - 18/10/19</h1>
+			<p>On the 18th, my band Blight Town played a paid gig supporting Skies in Motion on their farewell show. After our gig, I also managed the merch stand, and sold our t-shirts</p>
+		</div>
+		<div class="entry">
+			<h1>Paid Gig at The Chameleon, Nottingham - 14/10/19</h1>
+			<p>On the 14th, my band Blight Town played a paid gig as part of the Octobear tour, a co-headlining, gig-swap tour, with Bisch Nadar, Goldblume and Civil Villains</p>
+		</div>
+		<div class="entry">
+			<h1>Paid Gig at Albert's, Nottingham - 13/10/19</h1>
+			<p>On the 13th, my band Blight Town played a paid gig as main support for THC Dreams on their UK tour, alongside Punch Drunk, Puppet Paranoia and Saints Bay</p>
+		</div>
+		<div class="entry">
+			<h1>Computing Student Mentor Session - 7/10/19</h1>
+			<p>On the 7th, I attended the student mentor Q&A session for my class</p>
+		</div>
+		<div class="entry">
+			<h1>Charity Gig at The Drum and Monkey, Gresley - 28/9/19</h1>
+			<p>On the 28th, my band Dead on Arrival played a free entry gig at The Drum and Monkey in order to raise awareness and collect donations for Stroke Association UK</p>
+		</div>
+		<div class="entry" style="border-width:1px 0px">
+			<h1>Charity music festival at Rescue Rooms, Nottingham - 7/9/19</h1>
+			<p>On the 7th, my band Dead on Arrival played at Macmillan Fest, a music festival where all profits earned go to Macmillan Cancer Support</p>
+		</div>
+	</span>
+	<div class="column-right"> <!---Creates a div for the content on the right of the screen--->
+		<div class="about" id=about> <!---Creates a div for just the about section. An ID is given so that this can be navigated to from the sitemap.--->
+			<h1>About</h1>
+			<p>This site is a portfolio of my Continuing Professional Development (CPD) activities. 
+			<br>On this home page, you will find brief descriptions of my latest CPD activities. 
+			<br>For more details into each activity, or proof of my participation in them, please look at the CPD page, where they are sorted into categories. </p>
+		</div>
+		<div class="cpd-info" id=cpd-info> <!---Creates a div for just the CPD info. An ID is given so that this can be navigated to from the sitemap.--->
+			<h1>What is CPD?</h1>
+			<p>CPD activities refer to extra-curricular activities that contribute to your personal or professional development.
+			These activities aim to strengthen students' areas of weakness</p>
+		</div>
+	</div>
+</div>
+<footer>
+	<br>
+	<a>Created by Joseph Smith, 2019</a><br>
+	<a href="mailto:N0797675@ntu.ac.uk">N0797675@ntu.ac.uk</a><br> <!---Creates a link that, when clicked, loads my email address into the email client--->
+	<a href="sitemap.html">Sitemap</a> <!---Links to the website's sitemap--->
+</footer>
+</body>
+</html>
