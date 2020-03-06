@@ -1,1 +1,82 @@
+html{
+	max-width:100%; /*Sets the maximum width of the document to 100%, removing the need to scroll horizontally*/
+	overflow-x: hidden; /*Removes the horizontal scroll bar*/
+}
+body {
+	background-color:#FFEDF2; /*Sets the background colour*/
+	font-family: 'Nanum Gothic', sans-serif;
+	margin:0; /*The page automatically added a margin, so this removes it*/
+}
+h1 {
+	font-size:20px;
+	text-align:center;
+	font-weight:normal; /*Stops headings from being in bold*/
+	color:black;
+}
+p {
+	text-align:center;
+}
+footer {
+	background-color: #F23269;
+	padding:20px 20px 30px;
+	color:white;
+}
+footer a{
+	text-decoration:None; /*Stops hyperlinks from being underlined*/
+	color:white;
+	text-align:left;
+}
+header { 
+	padding:20px;
+	background-color: #F23269;
+	text-decoration:None; 
+	top:0; /*Positions the navbar at the top of the screen*/
+	position:fixed;
+	width:100%; /*Makes the header stretch across the whole of the top*/
+	z-index:1; /*Brings this element to the front*/
+}
+header a{
+	color:white;
+	font-size:20px;
+	padding:20px;
+	text-decoration:None;
+}
+header a:hover{
+	background-color: #FF497D; /*When any link in the header is hovered over, it will change the color of it*/
+}
+.cpd-dropdown{
+	display: inline-block; /*Allows the dropdown element to sit next to other elements, making the navbar horizontal*/
+}	
+.cpd-content{
+	display: none; /*Doesn't display until hovered over*/
+	position: absolute; /*Positions the dropdown below the header button*/
+	background-color: #f9f9f9;
+	box-shadow: 0px 2px 20px -10px #474747; /*Gives the box a shadow*/
+	padding: 6px 14px 6px;
+	margin-top: 20px;
+	white-space: nowrap; /*Stops the text from wrapping in the dropdown menu*/
+}	
+.cpd-dropdown:hover .cpd-content{
+	display:block; /*When the CPD button is hovered over, or the dropdown menu is hovered over, the dropdown menu will be displayed*/
+}
+.cpd-content a{
+	color:black;
+	font-size:18px;
+	text-decoration:None;
+	padding:10px 15px 10px 5px;
+	display:block;
+
+}
+.cpd-content a:hover{
+	background-color:#FFEDF2; /*When links in the dropdown menu are hovered over, they will change color*/
+}
+.entry{
+	border-width: 1px 0px 0px; /*Gives all entries a top border*/
+	border-style: solid;
+}
+.entry p{
+	padding:10px;
+}
+
+
 
